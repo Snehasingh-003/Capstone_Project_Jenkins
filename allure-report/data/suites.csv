@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1186","@api Verifying GET Accounts API","chromium","2026-05-17","passed","2026-05-17","Accounts API Validation","API\FR01_AccountAPI.spec.ts","",""
+"","700","Verifying API response for invalid account ID","chromium","2026-05-17","passed","2026-05-17","Accounts API Validation","API\FR01_AccountAPI.spec.ts","",""
+"","8994","@e2e Verifying Account Creation through UI and then Validating it through API","chromium","2026-05-17","passed","2026-05-17","","E2E\FR01_AccountCreation_E2E.spec.ts","",""
+"","8524","@smoke verify user login","chromium","2026-05-17","passed","2026-05-17","","UI\FR01_AccountCreation.spec.ts","",""

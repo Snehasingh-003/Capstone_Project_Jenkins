@@ -1,0 +1,7 @@
+
+    Account Opened!
+    Congratulations, your account is now open.
+    Your new account number: 
+  
+Captured newly created acc_num from table: 26109
+Response Status: 404

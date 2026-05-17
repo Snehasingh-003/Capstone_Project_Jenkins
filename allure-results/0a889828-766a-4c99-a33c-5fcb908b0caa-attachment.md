@@ -1,0 +1,234 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: E2E\FR01_AccountCreation_E2E.spec.ts >> @e2e Verifying Account Creation through UI and then Validating it through API
+- Location: tests\E2E\FR01_AccountCreation_E2E.spec.ts:8:7
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "CHECKING"
+Received: "SAVINGS"
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: admin.htm
+        - img [ref=e4] [cursor=pointer]
+      - link "ParaBank":
+        - /url: index.htm
+        - img "ParaBank" [ref=e5] [cursor=pointer]
+      - paragraph [ref=e6]: Experience the difference
+    - generic [ref=e7]:
+      - list [ref=e8]:
+        - listitem [ref=e9]: Solutions
+        - listitem [ref=e10]:
+          - link "About Us" [ref=e11] [cursor=pointer]:
+            - /url: about.htm
+        - listitem [ref=e12]:
+          - link "Services" [ref=e13] [cursor=pointer]:
+            - /url: services.htm
+        - listitem [ref=e14]:
+          - link "Products" [ref=e15] [cursor=pointer]:
+            - /url: http://www.parasoft.com/jsp/products.jsp
+        - listitem [ref=e16]:
+          - link "Locations" [ref=e17] [cursor=pointer]:
+            - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+        - listitem [ref=e18]:
+          - link "Admin Page" [ref=e19] [cursor=pointer]:
+            - /url: admin.htm
+      - list [ref=e20]:
+        - listitem [ref=e21]:
+          - link "home" [ref=e22] [cursor=pointer]:
+            - /url: index.htm
+        - listitem [ref=e23]:
+          - link "about" [ref=e24] [cursor=pointer]:
+            - /url: about.htm
+        - listitem [ref=e25]:
+          - link "contact" [ref=e26] [cursor=pointer]:
+            - /url: contact.htm
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: Welcome sneha singh
+        - heading "Account Services" [level=2] [ref=e30]
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - link "Open New Account" [ref=e33] [cursor=pointer]:
+              - /url: openaccount.htm
+          - listitem [ref=e34]:
+            - link "Accounts Overview" [ref=e35] [cursor=pointer]:
+              - /url: overview.htm
+          - listitem [ref=e36]:
+            - link "Transfer Funds" [ref=e37] [cursor=pointer]:
+              - /url: transfer.htm
+          - listitem [ref=e38]:
+            - link "Bill Pay" [ref=e39] [cursor=pointer]:
+              - /url: billpay.htm
+          - listitem [ref=e40]:
+            - link "Find Transactions" [ref=e41] [cursor=pointer]:
+              - /url: findtrans.htm
+          - listitem [ref=e42]:
+            - link "Update Contact Info" [ref=e43] [cursor=pointer]:
+              - /url: updateprofile.htm
+          - listitem [ref=e44]:
+            - link "Request Loan" [ref=e45] [cursor=pointer]:
+              - /url: requestloan.htm
+          - listitem [ref=e46]:
+            - link "Log Out" [ref=e47] [cursor=pointer]:
+              - /url: logout.htm
+      - generic [ref=e50]:
+        - heading "Accounts Overview" [level=1] [ref=e51]
+        - table [ref=e52]:
+          - rowgroup [ref=e53]:
+            - row "Account Balance* Available Amount" [ref=e54]:
+              - columnheader "Account" [ref=e55]
+              - columnheader "Balance*" [ref=e56]
+              - columnheader "Available Amount" [ref=e57]
+          - rowgroup [ref=e58]:
+            - row "26109 $415.50 $415.50" [ref=e59]:
+              - cell "26109" [ref=e60]:
+                - link "26109" [ref=e61] [cursor=pointer]:
+                  - /url: activity.htm?id=26109
+              - cell "$415.50" [ref=e62]
+              - cell "$415.50" [ref=e63]
+            - row "28662 $100.00 $100.00" [ref=e64]:
+              - cell "28662" [ref=e65]:
+                - link "28662" [ref=e66] [cursor=pointer]:
+                  - /url: activity.htm?id=28662
+              - cell "$100.00" [ref=e67]
+              - cell "$100.00" [ref=e68]
+            - row "Total $515.50" [ref=e69]:
+              - cell "Total" [ref=e70]
+              - cell "$515.50" [ref=e71]
+              - cell [ref=e72]
+          - rowgroup [ref=e73]:
+            - row "*Balance includes deposits that may be subject to holds" [ref=e74]:
+              - cell "*Balance includes deposits that may be subject to holds" [ref=e75]
+  - generic [ref=e77]:
+    - list [ref=e78]:
+      - listitem [ref=e79]:
+        - link "Home" [ref=e80] [cursor=pointer]:
+          - /url: index.htm
+        - text: "|"
+      - listitem [ref=e81]:
+        - link "About Us" [ref=e82] [cursor=pointer]:
+          - /url: about.htm
+        - text: "|"
+      - listitem [ref=e83]:
+        - link "Services" [ref=e84] [cursor=pointer]:
+          - /url: services.htm
+        - text: "|"
+      - listitem [ref=e85]:
+        - link "Products" [ref=e86] [cursor=pointer]:
+          - /url: http://www.parasoft.com/jsp/products.jsp
+        - text: "|"
+      - listitem [ref=e87]:
+        - link "Locations" [ref=e88] [cursor=pointer]:
+          - /url: http://www.parasoft.com/jsp/pr/contacts.jsp
+        - text: "|"
+      - listitem [ref=e89]:
+        - link "Forum" [ref=e90] [cursor=pointer]:
+          - /url: http://forums.parasoft.com/
+        - text: "|"
+      - listitem [ref=e91]:
+        - link "Site Map" [ref=e92] [cursor=pointer]:
+          - /url: sitemap.htm
+        - text: "|"
+      - listitem [ref=e93]:
+        - link "Contact Us" [ref=e94] [cursor=pointer]:
+          - /url: contact.htm
+    - paragraph [ref=e95]: © Parasoft. All rights reserved.
+    - list [ref=e96]:
+      - listitem [ref=e97]: "Visit us at:"
+      - listitem [ref=e98]:
+        - link "www.parasoft.com" [ref=e99] [cursor=pointer]:
+          - /url: http://www.parasoft.com/
+```
+
+# Test source
+
+```ts
+  1  | import { expect } from "@playwright/test";
+  2  | import { mytest } from "../../Fixture/TestFixture";
+  3  | import { LoginPage } from "../../Pages/LoginPage";
+  4  | import { OpenAccountpage } from "../../Pages/OpenAccountPage";
+  5  | import { AccountsOverviewPage } from "../../Pages/AccountsOverviewPage";
+  6  | import Login_Data from "../../Test_Data/Login_Data.json";
+  7  | 
+  8  | mytest('@e2e Verifying Account Creation through UI and then Validating it through API',
+  9  | async ({ page, request, testData }) => {
+  10 | 
+  11 |    // Login
+  12 |    const LP = new LoginPage(page);
+  13 | 
+  14 |    await page.goto(testData.url);
+  15 | 
+  16 |    await LP.username_click(Login_Data.username);
+  17 | 
+  18 |    await LP.passwd_click(Login_Data.password);
+  19 | 
+  20 |    await LP.login_btn();
+  21 | 
+  22 |    // Opening Account
+  23 |    const OAP = new OpenAccountpage(page);
+  24 | 
+  25 |    await OAP.click_open_acc_link();
+  26 | 
+  27 |    await OAP.select_saving_acc();
+  28 | 
+  29 |    await OAP.click_open_acc();
+  30 | 
+  31 |    await OAP.verify_success_message();
+  32 | 
+  33 |    // Accounts Overview
+  34 |    const AOP = new AccountsOverviewPage(page);
+  35 | 
+  36 |    await AOP.click_accounts_overview();
+  37 | 
+  38 |    // Capture latest created account number
+  39 |    const accountNumber = await AOP.capture_recent_created_account();
+  40 | 
+  41 |    // API Validation
+  42 |    const response = await request.get(
+  43 |       `https://parabank.parasoft.com/parabank/services/bank/accounts/${accountNumber}`,{
+  44 |          headers:{
+  45 |             'Accept':'application/json'
+  46 |          },
+  47 |       }
+  48 |    );
+  49 | 
+  50 |    console.log("Response Status:", response.status());
+  51 | 
+  52 |    expect(response.status()).toBe(200);
+  53 | 
+  54 |    const res_body = await response.json();
+  55 | 
+  56 |    console.log("API Response:", res_body);
+  57 | 
+  58 |    // checking if  Account Exists
+  59 |    expect(res_body.id.toString()).toBe(accountNumber);
+  60 | 
+  61 |    // Validating the Account Type
+  62 |    console.log("Account Type",res_body.type);
+> 63 |    expect(res_body.type).toBe("CHECKING");
+     |                          ^ Error: expect(received).toBe(expected) // Object.is equality
+  64 | 
+  65 |    // Validating Balance is Number
+  66 |    console.log("Balance of account:",res_body.balance);
+  67 |    expect(typeof res_body.balance).toBe("number");
+  68 |    
+  69 | 
+  70 | });
+```

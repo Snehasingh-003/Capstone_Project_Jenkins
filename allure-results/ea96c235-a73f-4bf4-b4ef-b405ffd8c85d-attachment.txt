@@ -1,0 +1,9 @@
+
+    Account Opened!
+    Congratulations, your account is now open.
+    Your new account number: 
+  
+Captured newly created acc_num from table: 28662
+Response Status: 200
+API Response: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><account><id>28662</id><customerId>18428</customerId><type>SAVINGS</type><balance>100.00</balance></account>
+Account Type: SAVINGS

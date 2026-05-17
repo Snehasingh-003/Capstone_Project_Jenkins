@@ -1,0 +1,3 @@
+using UI fetched acc_number: 26109
+Response status of valid accountID 200
+Response body: { id: 26109, customerId: 18428, type: 'CHECKING', balance: 415.5 }
