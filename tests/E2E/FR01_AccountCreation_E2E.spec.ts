@@ -24,7 +24,7 @@ async ({ page, request, testData }) => {
 
    await OAP.click_open_acc_link();
 
-   await OAP.select_saving_acc();
+   await OAP.select_checking_acc();
 
    await OAP.click_open_acc();
 
@@ -60,7 +60,7 @@ async ({ page, request, testData }) => {
 
    // Validating the Account Type
    console.log("Account Type",res_body.type);
-   expect(res_body.type).toBe("SAVINGS");
+   expect(res_body.type).toBe("CHECKING");
 
    // Validating Balance is Number
    console.log("Balance of account:",res_body.balance);

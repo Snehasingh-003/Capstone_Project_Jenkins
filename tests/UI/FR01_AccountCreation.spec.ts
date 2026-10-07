@@ -21,7 +21,6 @@ mytest('@smoke verify user login',async({page,testData})=>{
     const assertion = new Assert(page);
 
     await assertion.verifyURL("https://parabank.parasoft.com/parabank/overview.htm");
-    // await assertion.verifyURL("http://localhost:9090/parabank/overview.htm");
 
     const OAP = new OpenAccountpage(page);
 

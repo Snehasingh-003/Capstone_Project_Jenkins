@@ -9,8 +9,9 @@ export const mytest = base.extend<{
     testData: async ({}, use) => {
         await use({
             url:
-            // 'http://localhost:9090/parabank/'
             'https://parabank.parasoft.com'
         });
     }
 });
+
+

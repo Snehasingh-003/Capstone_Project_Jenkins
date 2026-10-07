@@ -1,8 +1,9 @@
 import {Page, Locator} from "@playwright/test";
 
 export default class LoginLocator{
-    constructor(public page: Page) {  
-
+    public page:Page;
+    constructor(page: Page) {  
+      this.page=page;
     }
     username():Locator{
         return this.page.locator('input[name="username"]');

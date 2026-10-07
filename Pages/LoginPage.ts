@@ -1,8 +1,6 @@
 import { Page } from "@playwright/test";
 import LoginLocator from "../Locator/LoginLocator";
 
-//constructor is used to receive the Playwright Page object when creating the class
-
 export class LoginPage{
    LO:LoginLocator;
   constructor(public page:Page){

@@ -1,0 +1,10 @@
+
+    Account Opened!
+    Congratulations, your account is now open.
+    Your new account number: 
+  
+Captured newly created acc_num from table: 26775
+Response Status: 200
+API Response: { id: 26775, customerId: 18872, type: 'CHECKING', balance: 100 }
+Account Type CHECKING
+Balance of account: 100

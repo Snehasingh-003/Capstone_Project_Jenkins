@@ -1,11 +1,12 @@
 import { Locator, Page } from "@playwright/test";
 export default class OpenaccountLocator{
-    constructor(public page:Page){
-
+    public page:Page;
+    constructor(page:Page){
+        this.page=page;
     }
     open_acc_link():Locator{
         return this.page.getByRole('link',{name:'Open New Account'});
-}
+    }
     acc_type_dropdown():Locator{
         return this.page.locator('select[id="type"]');
     }

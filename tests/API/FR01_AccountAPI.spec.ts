@@ -13,7 +13,7 @@ test.describe('Accounts API Validation', () => {
       console.log("using UI fetched acc_number:",acc_num_from_UI);
 
       expect(acc_num_from_UI).not.toBe('');
-
+  
       const response:APIResponse = await request.get(`https://parabank.parasoft.com/parabank/services/bank/accounts/${acc_num_from_UI}`,{
           headers: {
             'Accept': 'application/json'
@@ -49,7 +49,7 @@ test.describe('Accounts API Validation', () => {
               },
             });
            console.log('Response status of InvalidID:',response.status());
-           const responseBody = await response.text();
+           const responseBody = await response.json();
             expect(response.status()).not.toBe(200);
      });
 })

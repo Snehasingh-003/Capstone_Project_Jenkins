@@ -1,9 +1,9 @@
 import { Page, Locator } from "@playwright/test";
 
 export default class AccountsOverviewLocator {
-
-    constructor(public page: Page) {
-
+     public page:Page;
+    constructor( page: Page) {
+        this.page=page;
     }
 
     accounts_overview_link(): Locator {
